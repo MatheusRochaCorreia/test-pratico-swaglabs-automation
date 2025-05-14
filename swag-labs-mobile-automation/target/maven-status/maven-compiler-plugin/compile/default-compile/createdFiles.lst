@@ -1,0 +1,9 @@
+com\swaglab\mobile\automation\hooks\Hooks.class
+com\swaglab\mobile\automation\utils\ReportUtils$ScreenshotData.class
+com\swaglab\mobile\automation\pages\ProductsPage.class
+com\swaglab\mobile\automation\core\BasePage.class
+com\swaglab\mobile\automation\core\DriverManager.class
+com\swaglab\mobile\automation\listeners\ReportGenerationListener.class
+com\swaglab\mobile\automation\pages\LoginPage.class
+com\swaglab\mobile\automation\pages\MenuPage.class
+com\swaglab\mobile\automation\utils\ReportUtils.class

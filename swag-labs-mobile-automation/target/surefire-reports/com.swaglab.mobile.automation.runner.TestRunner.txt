@@ -1,0 +1,43 @@
+-------------------------------------------------------------------------------
+Test set: com.swaglab.mobile.automation.runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 19, Failures: 1, Errors: 1, Skipped: 14, Time elapsed: 269.9 s <<< FAILURE! -- in com.swaglab.mobile.automation.runner.TestRunner
+Gerenciamento de itens no carrinho do SwagLabs Mobile.Visualizar produtos no carrinho -- Time elapsed: 64.59 s <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [17c6aebb-b475-4534-bc2f-8b93959e7c7a, findChildElement {id=00000000-0000-0bf3-ffff-ffff00000099, using=xpath, value=.//android.widget.TextView[@content-desc='test-Item title']}]
+Capabilities {appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 26a8c447, newCommandTimeout: 60, platformName: ANDROID}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Xiaomi, appium:deviceModel: Redmi Note 9 Pro, appium:deviceName: 26a8c447, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 26a8c447, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 60, appium:pixelRatio: 2.75, appium:platformVersion: 12, appium:statBarHeight: 102, appium:takesScreenshot: true, appium:viewportRect: {height: 2298, left: 0, top: 102, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 17c6aebb-b475-4534-bc2f-8b93959e7c7a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:212)
+	at com.swaglab.mobile.automation.pages.CartPage.getItemNameByIndex(CartPage.java:108)
+	at com.swaglab.mobile.automation.steps.CartSteps.devoVisualizarOProdutoAdicionadoNoCarrinho(CartSteps.java:157)
+	at ✽.devo visualizar o produto adicionado no carrinho(classpath:features/cart.feature:23)
+
+Gerenciamento de itens no carrinho do SwagLabs Mobile.Remover um produto da tela do carrinho -- Time elapsed: 48.57 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: A mensagem 'No Items' não está sendo exibida ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:211)
+	at com.swaglab.mobile.automation.steps.CartSteps.devoVisualizarAMensagem(CartSteps.java:198)
+	at ✽.devo visualizar a mensagem "No Items"(classpath:features/cart.feature:32)
+
